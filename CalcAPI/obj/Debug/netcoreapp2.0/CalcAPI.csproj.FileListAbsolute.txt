@@ -1,0 +1,10 @@
+/home/marcuscosta/workspace/CalcSolution/CalcAPI/bin/Debug/netcoreapp2.0/CalcAPI.deps.json
+/home/marcuscosta/workspace/CalcSolution/CalcAPI/bin/Debug/netcoreapp2.0/CalcAPI.runtimeconfig.json
+/home/marcuscosta/workspace/CalcSolution/CalcAPI/bin/Debug/netcoreapp2.0/CalcAPI.runtimeconfig.dev.json
+/home/marcuscosta/workspace/CalcSolution/CalcAPI/bin/Debug/netcoreapp2.0/CalcAPI.dll
+/home/marcuscosta/workspace/CalcSolution/CalcAPI/bin/Debug/netcoreapp2.0/CalcAPI.pdb
+/home/marcuscosta/workspace/CalcSolution/CalcAPI/obj/Debug/netcoreapp2.0/CalcAPI.csproj.CoreCompileInputs.cache
+/home/marcuscosta/workspace/CalcSolution/CalcAPI/obj/Debug/netcoreapp2.0/CalcAPI.AssemblyInfoInputs.cache
+/home/marcuscosta/workspace/CalcSolution/CalcAPI/obj/Debug/netcoreapp2.0/CalcAPI.AssemblyInfo.cs
+/home/marcuscosta/workspace/CalcSolution/CalcAPI/obj/Debug/netcoreapp2.0/CalcAPI.dll
+/home/marcuscosta/workspace/CalcSolution/CalcAPI/obj/Debug/netcoreapp2.0/CalcAPI.pdb

@@ -1,0 +1,3 @@
+# Remove os arquivos de debug
+/*/bin/
+/*/obj/

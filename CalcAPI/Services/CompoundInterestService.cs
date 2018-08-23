@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 
-namespace CalcAPI.Models
+namespace CalcAPI.Services
 {
-    public class CompoundInterestModels
+    public class CompoundInterestServices
     {
         public decimal CalculateCompoundInterest(decimal initialValue, int months, decimal rate)
         {

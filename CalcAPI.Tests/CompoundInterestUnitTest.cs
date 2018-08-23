@@ -1,15 +1,15 @@
 using System;
 using Xunit;
-using CalcAPI.Models;
+using CalcAPI.Services;
 
 namespace CalcAPI.Tests
 {
     public class CompoundInterestUnitTest
     {
-        private readonly CompoundInterestModels _model;
+        private readonly CompoundInterestServices _service;
         public CompoundInterestUnitTest()
         {
-            _model = new CompoundInterestModels();
+            _service = new CompoundInterestServices();
         }
 
         [Fact]
@@ -18,7 +18,7 @@ namespace CalcAPI.Tests
             decimal initialValue = 0;
             int months = 0;
             decimal rate = 0.01m;
-            decimal compoundInterestReturn = _model.CalculateCompoundInterest(initialValue, months, rate);
+            decimal compoundInterestReturn = _service.CalculateCompoundInterest(initialValue, months, rate);
             Assert.Equal(0, compoundInterestReturn);
         }
 
@@ -28,7 +28,7 @@ namespace CalcAPI.Tests
             decimal initialValue = 10;
             int months = 0;
             decimal rate = 0.01m;
-            decimal compoundInterestReturn = _model.CalculateCompoundInterest(initialValue, months, rate);
+            decimal compoundInterestReturn = _service.CalculateCompoundInterest(initialValue, months, rate);
             Assert.Equal(initialValue, compoundInterestReturn);
         }
 
@@ -38,7 +38,7 @@ namespace CalcAPI.Tests
             decimal initialValue = 10;
             int months = 10;
             decimal rate = 0.00m;
-            decimal compoundInterestReturn = _model.CalculateCompoundInterest(initialValue, months, rate);
+            decimal compoundInterestReturn = _service.CalculateCompoundInterest(initialValue, months, rate);
             Assert.Equal(initialValue, compoundInterestReturn);
         }
 
@@ -49,7 +49,7 @@ namespace CalcAPI.Tests
         public void ShoulCalculateCompoundInterest(String initialValue, int months, String rate, String result)
         {
 
-            decimal compoundInterestReturn = _model.CalculateCompoundInterest(Convert.ToDecimal(initialValue), months, Convert.ToDecimal(rate));
+            decimal compoundInterestReturn = _service.CalculateCompoundInterest(Convert.ToDecimal(initialValue), months, Convert.ToDecimal(rate));
             Assert.Equal(Convert.ToDecimal(result), compoundInterestReturn);
         }
     }

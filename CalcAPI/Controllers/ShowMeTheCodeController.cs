@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace CalcAPI.Controllers
 {
     [Route("api/showmethecode")]
-    public class ShowMetheCodeController : Controller
+    public class ShowMeTheCodeController : Controller
     {
         [HttpGet]
         public IActionResult Get()

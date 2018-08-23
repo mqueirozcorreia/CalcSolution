@@ -17,7 +17,7 @@ namespace CalcAPI.Tests
         {
             decimal initialValue = 0;
             decimal compoundInterestReturn = _model.CalculateCompoundInterest(initialValue);
-            Assert.Equal(1, compoundInterestReturn);
+            Assert.Equal(0, compoundInterestReturn);
         }
     }
 }

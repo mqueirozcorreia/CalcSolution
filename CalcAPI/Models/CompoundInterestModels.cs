@@ -12,6 +12,11 @@ namespace CalcAPI.Models
                 return 0;
             }
 
+            if (months == 0)
+            {
+                return initialValue;
+            }
+
             return 1;
         }
     }

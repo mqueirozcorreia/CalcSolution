@@ -31,7 +31,7 @@ namespace CalcAPI.Tests
             decimal compoundInterestReturn = _model.CalculateCompoundInterest(initialValue, months, rate);
             Assert.Equal(initialValue, compoundInterestReturn);
         }
-        
+
         [Fact]
         public void ShouldReturnInitialValueWhenRateIsZero()
         {
@@ -40,6 +40,17 @@ namespace CalcAPI.Tests
             decimal rate = 0.00m;
             decimal compoundInterestReturn = _model.CalculateCompoundInterest(initialValue, months, rate);
             Assert.Equal(initialValue, compoundInterestReturn);
+        }
+
+        [Theory]
+        [InlineData("20.00", 1, "0.10", "22")]
+        [InlineData("20.00", 4, "0.11", "30.36")]
+        [InlineData("2030.10", 5, "0.12", "3577.72")]
+        public void ShoulCalculateCompoundInterest(String initialValue, int months, String rate, String result)
+        {
+
+            decimal compoundInterestReturn = _model.CalculateCompoundInterest(Convert.ToDecimal(initialValue), months, Convert.ToDecimal(rate));
+            Assert.Equal(Convert.ToDecimal(result), compoundInterestReturn);
         }
     }
 }

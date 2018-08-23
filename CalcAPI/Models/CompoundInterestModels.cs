@@ -7,17 +7,9 @@ namespace CalcAPI.Models
     {
         public decimal CalculateCompoundInterest(decimal initialValue, int months, decimal rate)
         {
-            if (initialValue == 0)
-            {
-                return 0;
-            }
+            double resultCalc = (double)initialValue * Math.Pow((1 + (double)rate), months);
 
-            if (months == 0 || rate == 0)
-            {
-                return initialValue;
-            }
-
-            return 1;
+            return (decimal)Math.Truncate(100 * resultCalc) / 100;
         }
     }
 }

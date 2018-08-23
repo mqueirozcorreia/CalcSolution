@@ -5,9 +5,10 @@ namespace CalcAPI.Models
 {
     public class CompoundInterestModels
     {
-        public decimal CalculateCompoundInterest(decimal initialValue)
+        public decimal CalculateCompoundInterest(decimal initialValue, int months)
         {
-            if(initialValue == 0){
+            if (initialValue == 0)
+            {
                 return 0;
             }
 

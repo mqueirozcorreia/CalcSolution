@@ -16,8 +16,18 @@ namespace CalcAPI.Tests
         public void ShouldReturnZeroWhenInitialValueIsZero()
         {
             decimal initialValue = 0;
-            decimal compoundInterestReturn = _model.CalculateCompoundInterest(initialValue);
+            int month = 0;
+            decimal compoundInterestReturn = _model.CalculateCompoundInterest(initialValue, month);
             Assert.Equal(0, compoundInterestReturn);
+        }
+
+        [Fact]
+        public void ShouldReturnInitialValueWhenMonthIsZero()
+        {
+            decimal initialValue = 10;
+            int month = 0;
+            decimal compoundInterestReturn = _model.CalculateCompoundInterest(initialValue, month);
+            Assert.Equal(initialValue, compoundInterestReturn);
         }
     }
 }

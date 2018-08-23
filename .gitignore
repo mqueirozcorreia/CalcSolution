@@ -1,3 +1,6 @@
 # Remove os arquivos de debug
 /*/bin/
 /*/obj/
+
+#Remove a pasta do vscode
+.vscode/

@@ -6,10 +6,18 @@ namespace CalcAPI.Tests
 {
     public class CompoundInterestUnitTest
     {
+        private readonly CompoundInterestModels _model;
+        public CompoundInterestUnitTest()
+        {
+            _model = new CompoundInterestModels();
+        }
+
         [Fact]
         public void ShouldReturnZeroWhenInitialValueIsZero()
         {
-            Assert.False(true);
+            decimal initialValue = 0;
+            decimal compoundInterestReturn = _model.CalculateCompoundInterest(initialValue);
+            Assert.Equal(1, compoundInterestReturn);
         }
     }
 }

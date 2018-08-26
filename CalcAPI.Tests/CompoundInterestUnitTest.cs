@@ -1,6 +1,7 @@
 using System;
 using Xunit;
 using CalcAPI.Services;
+using System.Collections.Generic;
 
 namespace CalcAPI.Tests
 {
@@ -43,14 +44,20 @@ namespace CalcAPI.Tests
         }
 
         [Theory]
-        [InlineData("20.00", 1, "0.10", "22")]
-        [InlineData("20.00", 4, "0.11", "30.36")]
-        [InlineData("2030.10", 5, "0.12", "3577.72")]
-        public void ShoulCalculateCompoundInterest(String initialValue, int months, String rate, String result)
+        [MemberData(nameof(ShoulCalculateCompoundInterestData))]
+        public void ShoulCalculateCompoundInterest(decimal initialValue, int months, decimal rate, decimal result)
         {
 
             decimal compoundInterestReturn = _service.CalculateCompoundInterest(Convert.ToDecimal(initialValue), months, Convert.ToDecimal(rate));
             Assert.Equal(Convert.ToDecimal(result), compoundInterestReturn);
         }
+        
+        public static IEnumerable<object[]> ShoulCalculateCompoundInterestData =>
+        new List<object[]>
+        {
+            new object[] { 20.00, 1, 0.10, 22},
+            new object[] {20.00, 4, 0.11, 30.36},
+            new object[] {2030.10, 5, 0.12, 3577.72 },
+        };
     }
 }

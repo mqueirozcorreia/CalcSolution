@@ -1,0 +1,146 @@
+{
+  "C:\\Users\\mateus.correia\\Documents\\Contratacao\\MarcusCosta\\CalcSolution\\CalcAPI.Tests\\bin\\Debug\\netcoreapp2.0\\CalcAPI.dll": {
+    "C:\\Users\\mateus.correia\\Documents\\Contratacao\\MarcusCosta\\CalcSolution\\CalcAPI\\Program.cs": {
+      "CalcAPI.Program": {
+        "System.Void CalcAPI.Program::Main(System.String[])": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.AspNetCore.Hosting.IWebHost CalcAPI.Program::BuildWebHost(System.String[])": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "23": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\mateus.correia\\Documents\\Contratacao\\MarcusCosta\\CalcSolution\\CalcAPI\\Startup.cs": {
+      "CalcAPI.Startup": {
+        "Microsoft.Extensions.Configuration.IConfiguration CalcAPI.Startup::get_Configuration()": {
+          "Lines": {
+            "21": 0
+          },
+          "Branches": []
+        },
+        "System.Void CalcAPI.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "25": 0,
+            "26": 0,
+            "27": 0
+          },
+          "Branches": []
+        },
+        "System.Void CalcAPI.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)": {
+          "Lines": {
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "37": 0,
+            "38": 0
+          },
+          "Branches": [
+            {
+              "Line": 32,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 32,
+              "Offset": 9,
+              "EndOffset": 20,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void CalcAPI.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\mateus.correia\\Documents\\Contratacao\\MarcusCosta\\CalcSolution\\CalcAPI\\Services\\CompoundInterestService.cs": {
+      "CalcAPI.Services.CompoundInterestServices": {
+        "System.Decimal CalcAPI.Services.CompoundInterestServices::CalculateCompoundInterest(System.Decimal,System.Int32,System.Decimal)": {
+          "Lines": {
+            "9": 6,
+            "10": 6,
+            "12": 6,
+            "13": 6
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\mateus.correia\\Documents\\Contratacao\\MarcusCosta\\CalcSolution\\CalcAPI\\Models\\CompoundInterestInput.cs": {
+      "CalcAPI.Models.CompoundInterestInput": {
+        "System.Decimal CalcAPI.Models.CompoundInterestInput::get_valorinicial()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 CalcAPI.Models.CompoundInterestInput::get_meses()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\mateus.correia\\Documents\\Contratacao\\MarcusCosta\\CalcSolution\\CalcAPI\\Controllers\\CompoundInterestController.cs": {
+      "CalcAPI.Controllers.CompoundInterestController": {
+        "Microsoft.AspNetCore.Mvc.IActionResult CalcAPI.Controllers.CompoundInterestController::Get(CalcAPI.Models.CompoundInterestInput)": {
+          "Lines": {
+            "25": 0,
+            "26": 0,
+            "28": 0,
+            "29": 0,
+            "31": 0,
+            "32": 0
+          },
+          "Branches": []
+        },
+        "System.Void CalcAPI.Controllers.CompoundInterestController::.ctor(Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\mateus.correia\\Documents\\Contratacao\\MarcusCosta\\CalcSolution\\CalcAPI\\Controllers\\ShowMeTheCodeController.cs": {
+      "CalcAPI.Controllers.ShowMeTheCodeController": {
+        "Microsoft.AspNetCore.Mvc.IActionResult CalcAPI.Controllers.ShowMeTheCodeController::Get()": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
